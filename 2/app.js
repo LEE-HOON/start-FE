@@ -42,7 +42,7 @@ if (isMan) {
 
 // alert
 alert('안녕하세요');
-var who = prompt('당신은 누구세요?');
+var who = prompt('당신은 누구십니까?');
 console.log(who);
 
 // 댓글이나 글 삭제할때
