@@ -3,7 +3,7 @@ console.log('app.js');
 // 변수
 var name ='이훈';
 var Name ='이훈';
-var age = 28;
+var age = 25;
 var message = 'hello';
 
 // 주석
