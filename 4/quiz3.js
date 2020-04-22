@@ -25,7 +25,6 @@ function addbox(){
     var add = document.createElement('div');
     add.className = 'box';
     add.style = 'display:block';
-
     document.body.appendChild(add);
 }
 
@@ -71,9 +70,14 @@ function toggle() {
 }
 
     function imagebtn(){
-        var $red= document.querySelectorAll(".box");
-        $red[0]
-         
+             if($red.length == 0) addbox();{
+            var add = document.createElement('img');
+            add.className = 'box';
+            add.style = 'display:block';
+            add.src ="https://i.imgur.com/69NjYBH.png";
+            document.body.appendChild(add);
+        }
+        
     }
 
 $addRed.addEventListener('click', addcolor);

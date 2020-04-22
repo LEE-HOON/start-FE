@@ -23,10 +23,11 @@
 // console.log(box2);
 
 // Dom 생성
-// var div = document.createElement('div');
-// // console.log(div);
-// div.style.border = '1px solid #000'
-// div.innerHTML='Hello!'
+var div = document.createElement('div');
+
+div.style.border = '1px solid #000'
+div.innerHTML='Hello!'
+console.log(div);
 
 // document.body.appendChild(div);
 
@@ -39,7 +40,7 @@
 // Dom 제거
 
 // var debug = document.getElementById('debug');
-// // debug.remove();
+// debug.remove();
 // const list = document.getElementById('list'); 
 // list.removeChild(list.children[0]);
 
