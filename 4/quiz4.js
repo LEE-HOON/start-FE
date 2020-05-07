@@ -1,14 +1,14 @@
 const $box = document.getElementById('box');
 
-// let offset = { x : 0, y :  0} ;
+let offset = { x : 0, y :  0} ;
 let isDown = false;
 
 $box.addEventListener('mousedown', (event) => {
     isDown = true;
     // console.log('mousedown');
     console.log($box.offsetLeft);
-    // offset.x = $box.offsetLeft - event.clientX;
-    // offset.y = $box.offsetTop - event.clientY;
+    offset.x = $box.offsetLeft - event.clientX;
+    offset.y = $box.offsetTop - event.clientY;
 });
 
 $box.addEventListener('mouseup' , (event) => {
@@ -23,6 +23,6 @@ document.body.addEventListener('mousemove', (event) =>{
 
     $box.style.left = event.clientX;
     $box.style.top = event.clientY;
-    // $box.style.left = event.clientX + offset.x;
-    // $box.style.top = event.clientY + offset.y;
+    $box.style.left = event.clientX + offset.x;
+    $box.style.top = event.clientY + offset.y;
 });
